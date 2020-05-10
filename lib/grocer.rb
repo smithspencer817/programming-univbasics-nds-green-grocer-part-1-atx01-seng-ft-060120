@@ -19,6 +19,7 @@ def consolidate_cart(cart)
       result.push(item)
     end
   end
+  binding.pry
   result
 end
 
