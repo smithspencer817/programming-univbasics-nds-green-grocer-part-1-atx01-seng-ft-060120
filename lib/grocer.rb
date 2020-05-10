@@ -4,6 +4,7 @@ def find_item_by_name_in_collection(name, collection)
     if item[:name] == name
       return item
     end
+    binding.pry
   end
   nil
 end
