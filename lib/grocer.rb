@@ -12,17 +12,8 @@ end
 
 def consolidate_cart(cart)
   result = []
-  cart.each do |item|
-    item[:item].each do |name|
-      if result.include? (name)
-        item[:price] += item[:price]
-        item[:count] += 1
-      else        
-        result.push(item)
-        item[:count] = 1
-      end
-    end
-  end
+  counter = 0 
+  
   result
 end
 
