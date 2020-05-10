@@ -12,8 +12,10 @@ end
 
 def consolidate_cart(cart)
   result = []
-  
-
+  cart.each do |item|
+    
+  end
+  result
 end
 
 
