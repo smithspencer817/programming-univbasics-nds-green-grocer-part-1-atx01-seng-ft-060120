@@ -12,7 +12,6 @@ end
 
 def consolidate_cart(cart)
   result = []
-  binding.pry
   cart.each do |item|
     if result.include? (item[:item])
       item[:price] += item[:price]
