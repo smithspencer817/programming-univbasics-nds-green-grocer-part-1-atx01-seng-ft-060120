@@ -13,7 +13,11 @@ end
 def consolidate_cart(cart)
   result = []
   cart.each do |item|
-    if !cart.include?
+    if result.include? cart[:item]
+      #add to price
+    else
+      #add to list
+    end
   end
   result
 end
