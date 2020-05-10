@@ -13,10 +13,12 @@ end
 def consolidate_cart(cart)
   result = []
   cart.each do |item|
-    if result.include? (cart[:item])
-      #add to price
-    else
-      #add to list
+    item[:item].each do
+      if result.include? (item[:item])
+        item[:price] += item[:price]
+      else
+        result.push(item)
+      end
     end
   end
   result
